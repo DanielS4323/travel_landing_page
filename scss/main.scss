@@ -5,7 +5,7 @@
 
 @include start;
 
-html {
+body {
     font-family: 'Luxurious Roman', cursive;
 }
 
@@ -38,9 +38,16 @@ header {
             position: relative;
             li {
                 padding: 0 1em;
+
+               
                 a {
                     text-decoration: none;
                     color: white;
+                    
+                    &:hover {
+                        background-color: $zuta;
+                        color: $tamno_plava;
+                    }
                 }
             }
         }
@@ -114,9 +121,9 @@ header {
 }
 
 main {
-    height: 25em;
+    height: 30em;
     section {
-
+        
         h1 {
             color: $tamno_plava;
             text-align: center;
@@ -124,18 +131,56 @@ main {
         }
 
         .slike {
+            padding-top: 3em;
             display: flex;
         }
 
         .wrap {
+            padding: .5em 3em;
+            margin: 0 auto;
+            box-shadow: 1.5px .3px 3px .2px black;
+            border-radius: 8px;
 
             img {
                 width: 16em;
                 height: 20em;
+                border-radius: 8px;
             }
 
             p {
-                
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 3em;
+    height: 25em;
+    background-color: $tamno_plava;
+    display: flex;
+    justify-content: center;
+
+    .google {
+        padding-top: 3em;
+    }
+
+    .text {
+        margin-left: 1em;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        ul {
+            list-style-type: none;
+            padding: 1em;
+            .veciFont {
+                font-size: 1.2em;
+            }
+
+            li {
+                color: white;
             }
         }
     }

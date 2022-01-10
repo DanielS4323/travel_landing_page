@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   font-family: "Luxurious Roman", cursive;
 }
 
@@ -45,6 +45,10 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
+}
+header nav ul li a:hover {
+  background-color: #f2f2dd;
+  color: #0e1538;
 }
 header nav button {
   border-radius: 25px;
@@ -100,7 +104,7 @@ header nav button span {
 }
 
 main {
-  height: 25em;
+  height: 30em;
 }
 main section h1 {
   color: #0e1538;
@@ -108,11 +112,51 @@ main section h1 {
   font-size: 3em;
 }
 main section .slike {
+  padding-top: 3em;
   display: flex;
+}
+main section .wrap {
+  padding: 0.5em 3em;
+  margin: 0 auto;
+  box-shadow: 1.5px 0.3px 3px 0.2px black;
+  border-radius: 8px;
 }
 main section .wrap img {
   width: 16em;
   height: 20em;
+  border-radius: 8px;
+}
+main section .wrap p {
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  margin-top: 3em;
+  height: 25em;
+  background-color: #0e1538;
+  display: flex;
+  justify-content: center;
+}
+footer .google {
+  padding-top: 3em;
+}
+footer .text {
+  margin-left: 1em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+footer .text ul {
+  list-style-type: none;
+  padding: 1em;
+}
+footer .text ul .veciFont {
+  font-size: 1.2em;
+}
+footer .text ul li {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
