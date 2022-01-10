@@ -125,6 +125,10 @@ main section .wrap img {
   width: 16em;
   height: 20em;
   border-radius: 8px;
+  transition: all 0.7s;
+}
+main section .wrap img:hover {
+  transform: scaleX(-1) scale(1.2);
 }
 main section .wrap p {
   font-weight: bold;

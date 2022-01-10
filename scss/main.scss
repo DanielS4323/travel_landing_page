@@ -43,7 +43,7 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
-                    
+
                     &:hover {
                         background-color: $zuta;
                         color: $tamno_plava;
@@ -140,11 +140,19 @@ main {
             margin: 0 auto;
             box-shadow: 1.5px .3px 3px .2px black;
             border-radius: 8px;
+            
+
+           
 
             img {
                 width: 16em;
                 height: 20em;
                 border-radius: 8px;
+                transition: all .7s;
+
+                &:hover {
+                    transform: scaleX(-1) scale(1.2);
+                }
             }
 
             p {
