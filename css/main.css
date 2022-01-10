@@ -1,3 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-family: "Luxurious Roman", cursive;
+}
+
+header {
+  height: 5em;
+  width: 100%;
+  background-color: #0e1538;
+}
+header nav {
+  height: 5em;
+  width: 100%;
+}
+header nav .logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 0.8em;
+}
+header nav .logo img {
+  width: 2em;
+}
+header nav .logo p {
+  color: white;
+  font-size: 1.8em;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+header nav ul li {
+  padding: 0 1em;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav button {
+  border-radius: 25px;
+  background-color: white;
+  padding: 0.4em 0.7em;
+  font-family: "Luxurious Roman", cursive;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  border: none;
+}
+header nav button span {
+  border-right: 1px solid black;
+  padding: 0.5em;
+  height: 50%;
+}
+
+.background {
+  height: 35em;
+  width: 100%;
+  background: url(/slike/background.jpeg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.background form {
+  background-color: white;
+  height: 8em;
+  padding: 0.5em;
+  border-radius: 25px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  justify-content: center;
+}
+.background form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.background form input {
+  width: 15em;
+  border-radius: 25px;
+  height: 5em;
+}
+.background form button {
+  border-radius: 50%;
+  background-color: #fb5b5b;
+  width: 5em;
+  height: 5em;
+  border: none;
+}
+
+main {
+  height: 25em;
+}
+main section h1 {
+  color: #0e1538;
+  text-align: center;
+  font-size: 3em;
+}
+main section .slike {
+  display: flex;
+}
+main section .wrap img {
+  width: 16em;
+  height: 20em;
+}
 
 /*# sourceMappingURL=main.css.map */
