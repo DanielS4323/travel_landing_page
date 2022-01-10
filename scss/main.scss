@@ -36,6 +36,7 @@ header {
             display: flex;
             justify-content: center;
             position: relative;
+            transition: all .2s;
             li {
                 padding: 0 1em;
 
@@ -47,6 +48,7 @@ header {
                     &:hover {
                         background-color: $zuta;
                         color: $tamno_plava;
+                       
                     }
                 }
             }
@@ -61,11 +63,12 @@ header {
             top: 2em;
             right: 2em;
             border: none;
+
             span {
                 border-right: 1px solid black;
-                padding: .5em;
-                height: .1em;
-                width: .1em;
+                height: 1px;
+                padding: 0 .4em;
+              
 
             }
         }
@@ -128,7 +131,7 @@ header {
 main {
     height: 30em;
     section {
-        
+        width: 100%;
         h1 {
             color: $tamno_plava;
             text-align: center;
@@ -146,6 +149,7 @@ main {
             margin: 0 auto;
             box-shadow: 1.5px .3px 3px .2px black;
             border-radius: 8px;
+            
             
 
            
@@ -201,7 +205,7 @@ footer {
 
 @media only screen  and (max-width: 1082px) {
         main {
-            height: 80em;
+            height: 84em;
 
             section {
 
@@ -210,7 +214,7 @@ footer {
                    flex-direction: column;
 
                    .wrap {
-                       padding: 1em;
+                       padding: 1.4em;
                    }
                     
                 }
@@ -224,8 +228,77 @@ footer {
             align-items: center;
 
             .google {
-                transform: scaleX(2);
+                transform: scaleX(1.7);
             }
         }
 }
+
+@media only screen  and (max-width: 918px) {
+    
+    .background {
+        
+
+        form {
+            flex-direction: column;
+            width: 80%;
+            margin-top: 1.5em;
+            height: 30em;
+            width: 80%;
+            
+            
+            div {
+                padding: .4em;
+                padding-left: 2em;
+            }
+
+            label {
+                text-align: left;
+            }
+
+            input {
+                width: 95%;
+            }
+
+            button {
+                width: 95%;
+                border-radius: 12px;
+                
+            }
+        }
+    }
+}
+
+
+@media only screen  and (max-width: 775px) {
+        
+header {
+    height: 18em;
+    nav {
+        .logo {
+           margin-left: 4em;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.6em;
+            
+             
+            li {
+                padding: 1em 0;
+                
+                a {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        button {
+            margin-right: 3em;
+            transform: scale(1.4);
+        }
+    }
+}
+}
+
+
 
