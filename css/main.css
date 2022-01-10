@@ -60,6 +60,7 @@ header nav button {
   top: 2em;
   right: 2em;
   border: none;
+  cursor: pointer;
 }
 header nav button span {
   border-right: 1px solid black;
@@ -108,6 +109,7 @@ header nav button span {
   width: 5em;
   height: 5em;
   border: none;
+  cursor: pointer;
 }
 
 main {
@@ -124,6 +126,7 @@ main section h1 {
 main section .slike {
   padding-top: 3em;
   display: flex;
+  flex-wrap: wrap;
 }
 main section .wrap {
   padding: 0.5em 3em;
@@ -175,10 +178,7 @@ footer .text ul li {
 
 @media only screen and (max-width: 1082px) {
   main {
-    height: 84em;
-  }
-  main section .slike {
-    flex-direction: column;
+    height: 64em;
   }
   main section .slike .wrap {
     padding: 1.4em;
@@ -235,9 +235,22 @@ footer .text ul li {
   header nav ul li a {
     font-size: 1.2em;
   }
+  header nav ul li a:hover {
+    padding: 0.5em 10em;
+  }
   header nav button {
     margin-right: 3em;
     transform: scale(1.4);
+  }
+
+  main {
+    height: 84em;
+  }
+  main section .slike {
+    flex-direction: column;
+  }
+  main section .slike .wrap {
+    padding: 1.4em;
   }
 }
 

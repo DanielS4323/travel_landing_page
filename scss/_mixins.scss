@@ -7,3 +7,7 @@
         box-sizing: border-box;
     }
 }
+
+@mixin pointer {
+    cursor: pointer;
+}

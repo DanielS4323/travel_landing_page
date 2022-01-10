@@ -63,6 +63,8 @@ header {
             top: 2em;
             right: 2em;
             border: none;
+            
+            @include pointer;
 
             span {
                 border-right: 1px solid black;
@@ -122,6 +124,7 @@ header {
             width: 5em;
             height: 5em;
             border: none;
+            @include pointer;
 
          
         }
@@ -141,6 +144,7 @@ main {
         .slike {
             padding-top: 3em;
             display: flex;
+            flex-wrap: wrap;
             
         }
 
@@ -205,14 +209,11 @@ footer {
 
 @media only screen  and (max-width: 1082px) {
         main {
-            height: 84em;
+            height: 64em;
 
             section {
 
                 .slike {
-                    
-                   flex-direction: column;
-
                    .wrap {
                        padding: 1.4em;
                    }
@@ -289,12 +290,30 @@ header {
                 
                 a {
                     font-size: 1.2em;
+
+                    &:hover {
+                        padding: .5em 10em;
+                    }
                 }
             }
         }
         button {
             margin-right: 3em;
             transform: scale(1.4);
+        }
+    }
+}
+main {
+    height: 84em;
+
+    section {
+
+        .slike {
+            flex-direction: column;
+           .wrap {
+               padding: 1.4em;
+           }
+            
         }
     }
 }
