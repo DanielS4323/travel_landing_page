@@ -178,7 +178,7 @@ footer .text ul li {
 
 @media only screen and (max-width: 1082px) {
   main {
-    height: 64em;
+    height: 34em;
   }
   main section .slike .wrap {
     padding: 1.4em;
@@ -195,6 +195,13 @@ footer .text ul li {
   }
 }
 @media only screen and (max-width: 918px) {
+  main {
+    height: 60em;
+  }
+  main section .slike .wrap {
+    padding: 1.4em;
+  }
+
   .background form {
     flex-direction: column;
     width: 80%;

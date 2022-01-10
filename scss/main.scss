@@ -209,7 +209,7 @@ footer {
 
 @media only screen  and (max-width: 1082px) {
         main {
-            height: 64em;
+            height: 34em;
 
             section {
 
@@ -235,6 +235,20 @@ footer {
 }
 
 @media only screen  and (max-width: 918px) {
+
+    main {
+        height: 60em;
+
+        section {
+
+            .slike {
+               .wrap {
+                   padding: 1.4em;
+               }
+                
+            }
+        }
+    }
     
     .background {
         
